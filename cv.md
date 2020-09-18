@@ -1,4 +1,4 @@
-Aliaksandr Bandziuk
+![Image](https://sun9-5.userapi.com/c840324/v840324702/81077/GdfbeIgrlCo.jpg)Aliaksandr Bandziuk
 ============
 
 Contacts
