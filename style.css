@@ -2,6 +2,7 @@ body {
    max-width: 700px;
    margin: auto;
    background-color: grey;
+   font-family: 'Courier New', Courier, monospace;
 }
 
 .hr {
