@@ -1,13 +1,13 @@
 Aliaksandr Bandziuk
 ============
 
--------------------
+Contacts
+---------
 Kazimirovskaya str.\
 Minsk\
 Belarus\
 Email: alexander.banduk@gmail.com\
 Phone: +375292321108
--------------------     ----------------------------
 
 Education
 ---------
