@@ -1,0 +1,36 @@
+body {
+   max-width: 700px;
+   margin: auto;
+   background-color: grey;
+}
+
+.hr {
+   /* max-width: 1500px; */
+   margin: auto;
+}
+
+.year_edu {
+   font-style: italic;
+   font-weight: bold;
+}
+
+.title_edu {
+   margin-left: 20px;
+}
+
+.bold-text {
+   font-weight: bold;
+}
+
+.image {
+   float: left;
+}
+
+.h1 {
+   margin-left: 120px;
+   position: relative;
+}
+
+.contacts {
+   margin-top: 80px;
+}
