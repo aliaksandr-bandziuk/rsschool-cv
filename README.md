@@ -36,7 +36,7 @@ January 2022 — June 2022
 * Working with Wordpress (Basic knowledge of PHP)
 * Refinement of existing pages
 
-### HTML-Developer, Freelance
+### Frontend-Developer, Freelance
 
 January 2021 — Present
 
@@ -59,7 +59,6 @@ const addHtml = () => {
     let value = 'Комплектация: City Life';
     console.log(complect);
     if (complect.includes(value)) {
-      console.log('привет');
       carComplect.innerHTML += '<div><p><b>Скидки! Акции! Покупайте!</b></p></div>'
     }
   }
@@ -67,3 +66,21 @@ const addHtml = () => {
 
 setTimeout(addHtml, 3000);
 ```
+
+## Education
+
+* **European Humanities University**
+  + Media and Communications (Incomplete higher education)
+  + 2011 year
+* **Glo Academy**
+  + JavaScript
+  + March 2020 — May 2020
+* **Udemy**
+  + React.js
+  + August 2022 — Present
+
+## Languages
+
+* English
+* Belarussian
+* Russian
