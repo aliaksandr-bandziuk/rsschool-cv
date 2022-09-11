@@ -1,5 +1,3 @@
-# rsschool-cv
-
 # Aliaksandr Bandziuk
 
 ## Summary
