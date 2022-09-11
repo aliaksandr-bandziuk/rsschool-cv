@@ -79,6 +79,6 @@ setTimeout(addHtml, 3000);
 
 ## Languages
 
-* English
-* Belarussian
-* Russian
+* English (B2)
+* Belarussian (native speaker)
+* Russian (native speaker)
