@@ -64,7 +64,6 @@
             <div class="language">
               <p class="language__name">Russian</p>
               <div class="language__level level-ru">
-                <!-- <div class="level-range"></div> -->
               </div>
             </div>
           </div>
@@ -106,10 +105,10 @@
           <h2>Code Examples</h2>
           <pre>
             <code>
-              const addHtml = () => {
+              const addHtml = () =&gt; {
                 const cars = document.querySelectorAll('.block__item-text');
               
-                for (let i = 0; i < cars.length; i++) {
+                for (let i = 0; i &lt; cars.length; i++) {
                   let carComplect = cars[i].querySelector('.complect');
                   let complect = carComplect.innerHTML;
                   let value = 'Комплектация: City Life';
