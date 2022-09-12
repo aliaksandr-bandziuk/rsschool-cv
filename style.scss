@@ -41,3 +41,197 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+:root {
+  --whiteColor: #fff;
+  --blackColor: #000;
+}
+
+.container {
+  max-width: 1220px;
+  margin: 0 auto;
+  -webkit-box-shadow: 2px 2px 8px 0px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 2px 2px 8px 0px rgba(34, 60, 80, 0.2);
+  box-shadow: 2px 2px 8px 0px rgba(34, 60, 80, 0.2);
+  font-family: 'Roboto', sans-serif;
+  .cv__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    @media (max-width: 900px) {
+      display: flex;
+      flex-direction: column;
+    }
+    .cv__details {
+      background-color: #084c41;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      color: var(--whiteColor);
+      padding-left: 30px;
+      padding-right: 30px;
+      display: flex;
+      .hero {
+        margin: 0 auto;
+        &__name {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          img {
+            max-width: 100%;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 30px;
+          }
+          .hero__title {
+            font-size: 30px;
+            line-height: 35px;
+            text-align: center;
+            margin-bottom: 30px;
+          }
+          .hero__job {
+            letter-spacing: 2px;
+            margin-bottom: 30px;
+          }
+        }
+        &__links {
+          .links__block {
+            .links__title {
+              font-size: 20px;
+              line-height: 30px;
+              margin-bottom: 20px;
+            }
+            ul {
+              padding-left: 10px;
+              margin-bottom: 20px;
+              li {
+                margin-bottom: 10px;
+                font-size: 14px;
+                a {
+                  transition: all ease-in-out .2s;
+                  &:hover {
+                    text-decoration: underline;
+                    color: red;
+                  }
+                }
+              }
+            }
+          }
+        }
+        .hero__langs {
+          .langs__title {
+            font-size: 20px;
+            line-height: 30px;
+            margin-bottom: 20px;
+          }
+          .language {
+            cursor: pointer;
+            margin-bottom: 20px;
+            &:hover {
+              .language__level {
+                background-color: red;
+              }
+            }
+            .language__name {
+              margin-bottom: 10px;
+              font-size: 14px;
+            }
+            .language__level {
+              height: 2px;
+              background-color: #fff;
+              opacity: 0.5;
+              transition: all ease-in-out .2s;
+            }
+            .level-english {
+              width: 70%;
+            }
+            .level-bel {
+              width: 90%;
+            }
+            .level-ru {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+    .cv__description {
+      padding-top: 50px;
+      padding-bottom: 50px;
+      padding-left: 100px;
+      padding-right: 100px;
+      color: var(--blackColor);
+      @media (max-width: 1000px) {
+        padding-left: 50px;
+        padding-right: 50px;
+      }
+      h2 {
+        font-size: 25px;
+        margin-bottom: 20px;
+      }
+      .summary {
+        padding-bottom: 20px;
+        p {
+          font-size: 16px;
+          line-height: 25px;
+          margin-bottom: 15px;
+        }
+      }
+      .experience {
+        .work {
+          padding-top: 20px;
+          padding-bottom: 20px;
+          .work__name {
+            font-size: 20px;
+            margin-bottom: 15px;
+          }
+          .work__time {
+            font-size: 16px;
+            color: grey;
+            margin-bottom: 15px;
+          }
+          ul {
+            padding-left: 25px;
+            li {
+              list-style: circle;
+              font-size: 16px;
+              line-height: 25px;
+            }
+          }
+        }
+      }
+      .code {
+        padding-bottom: 20px;
+        pre {
+          background-color: rgb(222, 218, 218);
+          border-radius: 5px;
+          padding: 20px;
+          white-space: pre-wrap;
+          word-break: break-all;
+        }
+      }
+      .education {
+        .study {
+          padding-left: 20px;
+          padding-bottom: 20px;
+          &__title {
+            font-size: 20px;
+            margin-bottom: 10px;
+          }
+          &__class {
+            font-size: 16px;
+            margin-bottom: 10px;
+          }
+          &__period {
+            font-size: 12px;
+            color: grey;
+          }
+        }
+      }
+    }
+  }
+}

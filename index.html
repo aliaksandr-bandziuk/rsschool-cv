@@ -5,9 +5,145 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,500&display=swap" rel="stylesheet">
   <title>CV Aliaksandr Bandziuk</title>
 </head>
 <body>
-  
+  <div class="container">
+    <div class="cv__wrapper">
+      <section class="cv__details">
+        <div class="hero">
+          <div class="hero__name">
+            <img src="https://scontent.fmsq3-1.fna.fbcdn.net/v/t1.6435-9/41827743_1848128845234885_1800843597818363904_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeH2ECP8L2rUjkXiw7XThsg_WrJBGi0412RaskEaLTjXZKHdGw3QRe_3GQuvulu2_VzDtPwNMruhsydVgIKXhdaO&_nc_ohc=k_uCFSCI5XYAX9kGrvG&_nc_ht=scontent.fmsq3-1.fna&oh=00_AT8zyfvr204J3A7MwAJIdocv2xoIar7P_Fcq8jWdKxYqvA&oe=6343DDF2" alt="" class="hero__avatar">
+            <h1 class="hero__title">Aliaksandr Bandziuk</h1>
+            <p class="hero__job">Frontend-Developer</p>
+          </div>
+          <div class="hero__links">
+            <div class="links__block">
+              <p class="links__title">Details</p>
+              <ul class="details-list">
+                <li>Minsk</li>
+                <li>Belarus</li>
+                <li><a href="tel:+375293667187">+375 (29) 366-71-87</a></li>
+                <li><a href="mailto:aliaksandr.bandziuk@gmail.com">aliaksandr.bandziuk@gmail.com</a></li>
+              </ul>
+            </div>
+            <div class="links__block">
+              <p class="links__title">Links</p>
+              <ul class="urls-list">
+                <li><a href="https://github.com/aliaksandr-bandziuk/">GitHub</a></li>
+                <li><a href="https://www.linkedin.com/in/bandziuk">LinkedIn</a></li>
+              </ul>
+            </div>
+            <div class="links__block">
+              <p class="links__title">Skills</p>
+              <ul class="skills-list">
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>Git</li>
+                <li>jQuery</li>
+              </ul>
+            </div>
+          </div>
+          <div class="hero__langs">
+            <p class="langs__title">Languages</p>
+            <div class="language">
+              <p class="language__name">English</p>
+              <div class="language__level level-english">
+                <!-- <div class="level-range"></div> -->
+              </div>
+            </div>
+            <div class="language">
+              <p class="language__name">Belarussian</p>
+              <div class="language__level level-bel">
+                <!-- <div class="level-range"></div> -->
+              </div>
+            </div>
+            <div class="language">
+              <p class="language__name">Russian</p>
+              <div class="language__level level-ru">
+                <!-- <div class="level-range"></div> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="cv__description">
+        <div class="summary">
+          <h2>Summary</h2>
+          <p>Frontend developer with 1,5 years of experience in building web pages. Seeking for new opportunities in Junior Frontend developer.</p>
+
+          <p>I really love making web-pages and can do this from early morning to late night. I never give up and always looking for ideal way to complete a task.</p>
+        </div>
+        <div class="experience">
+          <h2>Work Experience</h2>
+          <div class="work">
+            <h3 class="work__name">Frontend Developer, Autopromservice, Minsk</h3>
+            <p class="work__time">January 2022 — June 2022</p>
+            <ul>
+              <li>Creating web-pages using HTML, CSS (SASS), JavaScript</li>
+              <li>Adaptive layout</li>
+              <li>Working with Wordpress (Basic knowledge of PHP)</li>
+              <li>Refinement of existing pages</li>
+            </ul>
+          </div>
+          <div class="work">
+            <h3 class="work__name">Frontend-Developer, Freelance</h3>
+            <p class="work__time">January 2021 — Present</p>
+            <ul>
+              <li>Website development using native JavaScript and React.js</li>
+              <li>Wordpress development (ACF, Gutenberg, Elementor, creation of themes, templates, submission forms)</li>
+              <li>Responsive and semantic page layout based on layouts (HTML5, CSS3, Flexbox, Grid, SASS, BEM)</li>
+              <li>Refinement of existing sites (layout, JS, PHP, jQuery)</li>
+              <li>Connecting plugins and third-party libraries</li>
+              <li>Create animations (HTML banners, cards)</li>
+            </ul>
+          </div>
+        </div>
+        <div class="code">
+          <h2>Code Examples</h2>
+          <pre>
+            <code>
+              const addHtml = () => {
+                const cars = document.querySelectorAll('.block__item-text');
+              
+                for (let i = 0; i < cars.length; i++) {
+                  let carComplect = cars[i].querySelector('.complect');
+                  let complect = carComplect.innerHTML;
+                  let value = 'Комплектация: City Life';
+                  if (complect.includes(value)) {
+                    carComplect.innerHTML += '<p><b>Скидки!</b></p>'
+                  }
+                }
+              }
+              setTimeout(addHtml, 3000);
+            </code>
+          </pre>
+        </div>
+        <div class="education">
+          <h2>Education</h2>
+          <div class="study">
+            <p class="study__title">European Humanities University</p>
+            <p class="study__class">Media and Communications (Incomplete higher education)</p>
+            <p class="study__period">2011 year</p>
+          </div>
+          <div class="study">
+            <p class="study__title">Glo Academy</p>
+            <p class="study__class">JavaScript</p>
+            <p class="study__period">March 2020 — May 2020</p>
+          </div>
+          <div class="study">
+            <p class="study__title">Udemy</p>
+            <p class="study__class">React.js</p>
+            <p class="study__period">August 2022 — Present</p>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
 </body>
 </html>

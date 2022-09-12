@@ -46,4 +46,188 @@ q:before, q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+:root {
+  --whiteColor: #fff;
+  --blackColor: #000;
+}
+
+.container {
+  max-width: 1220px;
+  margin: 0 auto;
+  box-shadow: 2px 2px 8px 0px rgba(34, 60, 80, 0.2);
+  font-family: "Roboto", sans-serif;
+}
+.container .cv__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+@media (max-width: 900px) {
+  .container .cv__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.container .cv__wrapper .cv__details {
+  background-color: #084c41;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  color: var(--whiteColor);
+  padding-left: 30px;
+  padding-right: 30px;
+  display: flex;
+}
+.container .cv__wrapper .cv__details .hero {
+  margin: 0 auto;
+}
+.container .cv__wrapper .cv__details .hero__name {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container .cv__wrapper .cv__details .hero__name img {
+  max-width: 100%;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 30px;
+}
+.container .cv__wrapper .cv__details .hero__name .hero__title {
+  font-size: 30px;
+  line-height: 35px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.container .cv__wrapper .cv__details .hero__name .hero__job {
+  letter-spacing: 2px;
+  margin-bottom: 30px;
+}
+.container .cv__wrapper .cv__details .hero__links .links__block .links__title {
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 20px;
+}
+.container .cv__wrapper .cv__details .hero__links .links__block ul {
+  padding-left: 10px;
+  margin-bottom: 20px;
+}
+.container .cv__wrapper .cv__details .hero__links .links__block ul li {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+.container .cv__wrapper .cv__details .hero__links .links__block ul li a {
+  transition: all ease-in-out 0.2s;
+}
+.container .cv__wrapper .cv__details .hero__links .links__block ul li a:hover {
+  text-decoration: underline;
+  color: red;
+}
+.container .cv__wrapper .cv__details .hero .hero__langs .langs__title {
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 20px;
+}
+.container .cv__wrapper .cv__details .hero .hero__langs .language {
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+.container .cv__wrapper .cv__details .hero .hero__langs .language:hover .language__level {
+  background-color: red;
+}
+.container .cv__wrapper .cv__details .hero .hero__langs .language .language__name {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+.container .cv__wrapper .cv__details .hero .hero__langs .language .language__level {
+  height: 2px;
+  background-color: #fff;
+  opacity: 0.5;
+  transition: all ease-in-out 0.2s;
+}
+.container .cv__wrapper .cv__details .hero .hero__langs .language .level-english {
+  width: 70%;
+}
+.container .cv__wrapper .cv__details .hero .hero__langs .language .level-bel {
+  width: 90%;
+}
+.container .cv__wrapper .cv__details .hero .hero__langs .language .level-ru {
+  width: 100%;
+}
+.container .cv__wrapper .cv__description {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 100px;
+  padding-right: 100px;
+  color: var(--blackColor);
+}
+@media (max-width: 1000px) {
+  .container .cv__wrapper .cv__description {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+.container .cv__wrapper .cv__description h2 {
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+.container .cv__wrapper .cv__description .summary {
+  padding-bottom: 20px;
+}
+.container .cv__wrapper .cv__description .summary p {
+  font-size: 16px;
+  line-height: 25px;
+  margin-bottom: 15px;
+}
+.container .cv__wrapper .cv__description .experience .work {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.container .cv__wrapper .cv__description .experience .work .work__name {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+.container .cv__wrapper .cv__description .experience .work .work__time {
+  font-size: 16px;
+  color: grey;
+  margin-bottom: 15px;
+}
+.container .cv__wrapper .cv__description .experience .work ul {
+  padding-left: 25px;
+}
+.container .cv__wrapper .cv__description .experience .work ul li {
+  list-style: circle;
+  font-size: 16px;
+  line-height: 25px;
+}
+.container .cv__wrapper .cv__description .code {
+  padding-bottom: 20px;
+}
+.container .cv__wrapper .cv__description .code pre {
+  background-color: rgb(222, 218, 218);
+  border-radius: 5px;
+  padding: 20px;
+  white-space: pre-wrap;
+  word-break: break-all;
+}
+.container .cv__wrapper .cv__description .education .study {
+  padding-left: 20px;
+  padding-bottom: 20px;
+}
+.container .cv__wrapper .cv__description .education .study__title {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.container .cv__wrapper .cv__description .education .study__class {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.container .cv__wrapper .cv__description .education .study__period {
+  font-size: 12px;
+  color: grey;
 }/*# sourceMappingURL=style.css.map */
